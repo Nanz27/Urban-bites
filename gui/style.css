@@ -1,0 +1,512 @@
+/* =========================================================
+   URBAN BITES
+   Cream + Gold + Warm Brown Theme
+   ========================================================= */
+
+
+/* =========================================================
+   ROOT / GENERAL
+   ========================================================= */
+
+.root {
+    -fx-font-family: "Segoe UI", Arial, sans-serif;
+    -fx-background-color: #F7F1E6;
+}
+
+
+/* =========================================================
+   TYPOGRAPHY
+   ========================================================= */
+
+.restaurant-title {
+    -fx-font-size: 32px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #4A3822;
+}
+
+.subtitle {
+    -fx-font-size: 14px;
+    -fx-text-fill: #756858;
+}
+
+.page-title {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4A3822;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #4A3822;
+}
+
+
+/* =========================================================
+   BUTTON SYSTEM
+   ========================================================= */
+
+/* Main gold button */
+
+.primary-button {
+    -fx-background-color: #92713A;
+    -fx-text-fill: #FFFDF8;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 24;
+    -fx-border-radius: 24;
+    -fx-padding: 10 24;
+    -fx-cursor: hand;
+}
+
+.primary-button:hover {
+    -fx-background-color: #80612F;
+}
+
+
+/* Gold outline button */
+
+.secondary-button {
+    -fx-background-color: #F7F1E6;
+    -fx-text-fill: #92713A;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 24;
+    -fx-border-radius: 24;
+    -fx-border-color: #92713A;
+    -fx-border-width: 2;
+    -fx-padding: 10 24;
+    -fx-cursor: hand;
+}
+
+.secondary-button:hover {
+    -fx-background-color: #EDE3D2;
+}
+
+
+/* Navigation buttons */
+
+.nav-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4A3822;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 8 16;
+    -fx-background-radius: 20;
+    -fx-cursor: hand;
+}
+
+.nav-button:hover {
+    -fx-background-color: #E8DECD;
+    -fx-text-fill: #92713A;
+}
+
+
+/* Danger button */
+
+.danger-button {
+    -fx-background-color: #9B4A42;
+    -fx-text-fill: #FFFDF8;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 24;
+    -fx-padding: 10 24;
+    -fx-cursor: hand;
+}
+
+.danger-button:hover {
+    -fx-background-color: #803B35;
+}
+
+
+/* Outline dark button */
+
+.outline-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #4A3822;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-color: #4A3822;
+    -fx-border-width: 2;
+    -fx-border-radius: 24;
+    -fx-background-radius: 24;
+    -fx-padding: 10 24;
+    -fx-cursor: hand;
+}
+
+.outline-button:hover {
+    -fx-background-color: #EDE3D2;
+}
+
+
+/* =========================================================
+   FORMS & INPUT FIELDS
+   ========================================================= */
+
+.login-card {
+    -fx-background-color: #FFFDF8;
+    -fx-background-radius: 20;
+    -fx-padding: 40;
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(80,60,30,0.10),
+        20,
+        0,
+        0,
+        8
+    );
+    -fx-border-color: #E2D5C1;
+    -fx-border-radius: 20;
+    -fx-border-width: 1;
+}
+
+.input-field {
+    -fx-pref-width: 280px;
+    -fx-pref-height: 42px;
+
+    -fx-background-color: #FBF7F0;
+    -fx-background-radius: 12;
+
+    -fx-border-radius: 12;
+    -fx-border-color: #D8CBB7;
+    -fx-border-width: 1.5;
+
+    -fx-padding: 0 14;
+
+    -fx-font-size: 14px;
+    -fx-text-fill: #4A3822;
+}
+
+.input-field:focused {
+    -fx-border-color: #92713A;
+    -fx-background-color: #FFFDF8;
+}
+
+.form-label {
+    -fx-font-size: 13px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #5C4A36;
+}
+
+
+/* =========================================================
+   FOOD CARDS
+   ========================================================= */
+
+.food-card {
+    -fx-background-color: #FFFDF8;
+    -fx-background-radius: 18;
+    -fx-padding: 16;
+
+    -fx-pref-width: 230px;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(80,60,30,0.08),
+        14,
+        0,
+        0,
+        5
+    );
+
+    -fx-border-color: #E8DCCB;
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+}
+
+.food-card:hover {
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(146,113,58,0.22),
+        18,
+        0,
+        0,
+        6
+    );
+
+    -fx-border-color: #92713A;
+}
+
+
+/* =========================================================
+   FOOD PRICES
+   ========================================================= */
+
+.price-label {
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #92713A;
+}
+
+
+/* =========================================================
+   CATEGORY BADGES
+   ========================================================= */
+
+.badge-veg {
+    -fx-background-color: #E6F0DF;
+    -fx-text-fill: #557344;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+    -fx-background-radius: 12;
+}
+
+.badge-nonveg {
+    -fx-background-color: #F4E2DD;
+    -fx-text-fill: #934B3F;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+    -fx-background-radius: 12;
+}
+
+.badge-beverage {
+    -fx-background-color: #E9E1F0;
+    -fx-text-fill: #69527D;
+    -fx-font-size: 11px;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10;
+    -fx-background-radius: 12;
+}
+
+
+/* =========================================================
+   DASHBOARD CARDS
+   ========================================================= */
+
+.dashboard-card {
+    -fx-background-color: #FFFDF8;
+    -fx-background-radius: 18;
+    -fx-padding: 24;
+
+    -fx-effect: dropshadow(
+        gaussian,
+        rgba(80,60,30,0.08),
+        15,
+        0,
+        0,
+        5
+    );
+
+    -fx-border-color: #E8DCCB;
+    -fx-border-radius: 18;
+    -fx-border-width: 1;
+}
+
+.dashboard-card:hover {
+    -fx-border-color: #92713A;
+}
+
+
+/* =========================================================
+   TABLE VIEW
+   ========================================================= */
+
+.table-view {
+    -fx-background-color: #FFFDF8;
+    -fx-border-color: #E2D5C1;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+}
+
+.table-view .column-header-background {
+    -fx-background-color: #EDE3D2;
+    -fx-background-radius: 12 12 0 0;
+}
+
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: #4A3822;
+    -fx-font-weight: bold;
+}
+
+.table-row-cell {
+    -fx-background-color: #FFFDF8;
+    -fx-text-fill: #4A3822;
+}
+
+.table-row-cell:odd {
+    -fx-background-color: #FBF7F0;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #E8DECD;
+    -fx-text-fill: #4A3822;
+}
+
+
+/* =========================================================
+   COMBO BOX
+   ========================================================= */
+
+.combo-box {
+    -fx-background-color: #FFFDF8;
+    -fx-border-color: #D8CBB7;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 10;
+    -fx-background-radius: 10;
+}
+
+.combo-box:hover {
+    -fx-border-color: #92713A;
+}
+
+.combo-box .list-cell {
+    -fx-text-fill: #4A3822;
+}
+
+
+/* =========================================================
+   CHECK BOX
+   ========================================================= */
+
+.check-box {
+    -fx-text-fill: #4A3822;
+}
+
+.check-box .box {
+    -fx-background-color: #FFFDF8;
+    -fx-border-color: #B9A88F;
+    -fx-border-radius: 5;
+}
+
+.check-box:selected .mark {
+    -fx-background-color: #FFFDF8;
+}
+
+.check-box:selected .box {
+    -fx-background-color: #92713A;
+    -fx-border-color: #92713A;
+}
+
+
+/* =========================================================
+   SCROLL BAR
+   ========================================================= */
+
+.scroll-bar {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar .track {
+    -fx-background-color: #EDE3D2;
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb {
+    -fx-background-color: #B9A88F;
+    -fx-background-radius: 10;
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #92713A;
+}
+
+
+/* =========================================================
+   TAB PANE
+   ========================================================= */
+
+.tab-pane {
+    -fx-background-color: transparent;
+}
+
+.tab-pane .tab-header-area {
+    -fx-background-color: #F7F1E6;
+}
+
+.tab-pane .tab {
+    -fx-background-color: transparent;
+    -fx-padding: 10 18;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #6B5A45;
+    -fx-font-weight: bold;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #EDE3D2;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: #92713A;
+}
+
+
+/* =========================================================
+   SEPARATOR
+   ========================================================= */
+
+.separator .line {
+    -fx-border-color: #E2D5C1;
+    -fx-border-width: 1 0 0 0;
+}
+
+
+/* =========================================================
+   TEXT AREA
+   ========================================================= */
+
+.text-area {
+    -fx-background-color: #FFFDF8;
+    -fx-border-color: #D8CBB7;
+    -fx-border-radius: 12;
+    -fx-background-radius: 12;
+    -fx-font-size: 14px;
+    -fx-text-fill: #4A3822;
+}
+
+.text-area:focused {
+    -fx-border-color: #92713A;
+}
+
+.text-area .content {
+    -fx-background-color: #FFFDF8;
+}
+
+
+/* =========================================================
+   ALERT / DIALOG
+   ========================================================= */
+
+.dialog-pane {
+    -fx-background-color: #FFFDF8;
+}
+
+.dialog-pane .header-panel {
+    -fx-background-color: #F7F1E6;
+}
+
+.dialog-pane .content.label {
+    -fx-text-fill: #4A3822;
+}
+
+.dialog-pane .button {
+    -fx-background-color: #92713A;
+    -fx-text-fill: #FFFDF8;
+    -fx-font-weight: bold;
+    -fx-background-radius: 20;
+    -fx-padding: 8 20;
+}
+
+.dialog-pane .button:hover {
+    -fx-background-color: #80612F;
+}
+
+
+/* =========================================================
+   TOOLTIP
+   ========================================================= */
+
+.tooltip {
+    -fx-background-color: #4A3822;
+    -fx-text-fill: #FFFDF8;
+    -fx-font-size: 12px;
+    -fx-background-radius: 8;
+    -fx-padding: 7 10;
+}
