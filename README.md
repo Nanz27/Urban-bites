@@ -1,4 +1,4 @@
-# 🍽️ Urban Bites
+# 🍽️ Urban Bites [GROUP-01]
 
 **Urban Bites** is a JavaFX-based food ordering service developed as an Object-Oriented Programming project. The system provides separate functionality for customers and administrators, allowing customers to browse food items, add items to a cart, place orders, and view their orders, while administrators can manage food items and update order statuses.
 
