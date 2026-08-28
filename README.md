@@ -42,29 +42,31 @@ The project demonstrates core Java and OOP concepts together with JavaFX GUI dev
 
 ---
 
+## 📸 Screenshots
+
+**Customer**
+
+| Login | Menu | Cart |
+|---|---|---|
+| ![Customer login](screenshots/01_customer_login.png) | ![Menu](screenshots/02_menu.png) | ![Cart](screenshots/03_cart.png) |
+
+| My Orders | Profile |
+|---|---|
+| ![My Orders](screenshots/04_my_orders.png) | ![Profile](screenshots/05_profile.png) |
+
+**Admin**
+
+| Admin Login | Dashboard | Add Food |
+|---|---|---|
+| ![Admin login](screenshots/06_admin_login.png) | ![Admin dashboard](screenshots/07_admin_dashboard.png) | ![Add food](screenshots/08_admin_add_food.png) |
+
+---
+
 ## 🏗️ System Architecture
 
 The project follows a separation-of-concerns approach so that different parts of the system have different responsibilities.
 
-```text
-                 Urban Bites
-                     │
-          ┌──────────┴──────────┐
-          │                     │
-      Customer                 Admin
-          │                     │
-          └──────────┬──────────┘
-                     │
-                JavaFX GUI
-                     │
-              Service / Logic
-                     │
-                Model Classes
-                     │
-              File Persistence
-                     │
-                Text Files
-```
+![Overall system flow](diagrams/overall-flow.png)
 
 ### Main Layers
 
@@ -105,6 +107,8 @@ FoodItem
 
 The project also uses inheritance for user-related classes such as `Customer` and `Admin`.
 
+See the [full class diagram](diagrams/class-diagram.png) for the complete structure, including `RestaurantSystem`, `Order`, `OrderItem`, `Cart`, and the `RestaurantOperations` interface.
+
 ### Polymorphism
 
 A general `FoodItem` reference can work with different food item subclasses, allowing common operations to work with different types of food.
@@ -121,46 +125,13 @@ Interfaces are used as contracts between classes where applicable, including fun
 
 ## 👥 Customer Workflow
 
-```text
-Register
-   ↓
-Login
-   ↓
-Customer Dashboard
-   ↓
-Public Menu
-   ↓
-View Food
-   ↓
-Add to Cart
-   ↓
-Cart
-   ↓
-Place Order
-   ↓
-Confirmation
-   ↓
-My Orders
-```
+![Customer workflow](diagrams/customer-flow.png)
 
 ---
 
 ## 👨‍💼 Admin Workflow
 
-```text
-Admin Login
-     ↓
-Admin Dashboard
-     ↓
-┌───────────────┬────────────────┐
-│               │                │
-Food Management  Order Management
-│               │
-├── Add Food     └── Update Order Status
-├── Edit Food
-├── Update Price
-└── Remove Food
-```
+![Admin workflow](diagrams/admin-flow.png)
 
 ---
 
@@ -263,6 +234,9 @@ src/
     ├── DuplicateFoodException
     ├── FoodNotFoundException
     └── EmptyOrderException
+
+diagrams/          — class diagram + activity flow diagrams (used in this README)
+screenshots/        — app screenshots (used in this README)
 ```
 
 > The exact structure may vary depending on the current version of the source code.
